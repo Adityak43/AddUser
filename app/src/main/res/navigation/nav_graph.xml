@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragListOfUsers">
+
+    <fragment
+        android:id="@+id/fragListOfUsers"
+        android:name="com.app.adduserapp.presentation.fragment.FragListOfUsers"
+        android:label="frag_list_of_users_fragment"
+        tools:layout="@layout/frag_list_of_users_fragment"
+        >
+        <action
+            android:id="@+id/action_fragListOfUsers_to_fragAdduser"
+            app:destination="@id/fragAdduser" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragAdduser"
+        android:name="com.app.adduserapp.presentation.fragment.FragAddUser"
+        android:label="frag_add_user_fragment"
+        tools:layout="@layout/frag_add_user_fragment"
+
+
+        />
+</navigation>
